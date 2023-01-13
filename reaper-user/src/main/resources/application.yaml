@@ -23,6 +23,9 @@ spring:
           slow-sql-millis: 2000
         wall:
           enabled: true
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
 sql:
   beauty:
     show: true
@@ -32,3 +35,13 @@ mybatis-plus:
       logic-delete-field: delete_flag
       logic-delete-value: 1
       logic-not-delete-value: 0
+    banner: false
+  mapper-locations: classpath:mapper/*.xml
+swagger:
+  base-package: com.ssssv
+  title: Reaper-Frame
+  contact-name: Ssssv
+  contact-url: https://github.com/Ssssv11/reaper-frame
+  contact-email: Ssssv111@outlook.com
+  version: 1.0
+  description: 开箱即用的收割机脚手架

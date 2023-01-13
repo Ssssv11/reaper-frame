@@ -8,6 +8,10 @@
     </parent>
 
     <artifactId>reaper-common</artifactId>
+    <packaging>pom</packaging>
+    <modules>
+        <module>reaper-common-swagger</module>
+    </modules>
 
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
