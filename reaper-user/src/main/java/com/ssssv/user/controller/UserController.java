@@ -1,6 +1,8 @@
 package com.ssssv.user.controller;
 
+import com.ssssv.bean.Result;
 import com.ssssv.user.entity.dto.UserDto;
+import com.ssssv.user.entity.req.UserListReq;
 import com.ssssv.user.entity.req.UserReq;
 import com.ssssv.user.service.UserService;
 import org.springframework.beans.BeanUtils;
@@ -15,9 +17,21 @@ public class UserController {
     private UserService userService;
 
     @PostMapping
-    public Integer addUser(@RequestBody UserReq userReq) {
+    public Result addUser(@RequestBody UserReq userReq) {
         UserDto userDto = new UserDto();
         BeanUtils.copyProperties(userReq, userDto);
-        return userService.addUser(userDto);
+        return Result.ok(userService.addUser(userDto));
+    }
+
+    @DeleteMapping("/{id}")
+    public Result deleteUser(@PathVariable Long id) {
+        return Result.ok(userService.delete(id));
+    }
+
+    @GetMapping()
+    public Result getUserInfoPage(@RequestBody UserListReq userListReq) {
+        UserDto userDto = new UserDto();
+        BeanUtils.copyProperties(userListReq, userDto);
+        return Result.ok(userService.getUserPage(userDto));
     }
 }

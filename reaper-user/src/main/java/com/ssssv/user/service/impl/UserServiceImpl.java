@@ -1,5 +1,8 @@
 package com.ssssv.user.service.impl;
 
+import com.baomidou.mybatisplus.core.metadata.IPage;
+import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
+import com.ssssv.entity.PageResult;
 import com.ssssv.user.entity.dto.UserDto;
 import com.ssssv.user.entity.po.UserPo;
 import com.ssssv.user.mapper.UserMapper;
@@ -19,5 +22,19 @@ public class UserServiceImpl implements UserService {
         UserPo userPo = new UserPo();
         BeanUtils.copyProperties(userDto, userPo);
         return userMapper.insert(userPo);
+    }
+
+    @Override
+    public int delete(Long id) {
+        return userMapper.deleteById(id);
+    }
+
+    @Override
+    public PageResult<UserPo> getUserPage(UserDto userDto) {
+        IPage<UserPo> userPoPage = new Page<>(userDto.getPageIndex(), userDto.getPageSize());
+        IPage<UserPo> userPage = userMapper.getUserPage(userPoPage);
+        PageResult<UserPo> pageResult = new PageResult<>();
+        pageResult.loadData(userPage);
+        return pageResult;
     }
 }
