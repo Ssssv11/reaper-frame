@@ -11,6 +11,7 @@
     <packaging>pom</packaging>
     <modules>
         <module>reaper-common-swagger</module>
+        <module>reaper-common-redis</module>
     </modules>
 
     <properties>

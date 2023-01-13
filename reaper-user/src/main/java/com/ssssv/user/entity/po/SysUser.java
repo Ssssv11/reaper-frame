@@ -1,10 +1,9 @@
 package com.ssssv.user.entity.po;
 
-import io.swagger.annotations.ApiParam;
 import lombok.Data;
 
-import java.util.Date;
 import java.io.Serializable;
+import java.util.Date;
 
 /**
  * (SysUser)实体类
@@ -16,7 +15,6 @@ import java.io.Serializable;
 public class SysUser implements Serializable {
     private static final long serialVersionUID = -44763338296240268L;
 
-    @ApiParam(value = "用户ID")
     private Long id;
     
     private String name;
