@@ -7,7 +7,7 @@ import org.springframework.cache.annotation.EnableCaching;
 import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
-@MapperScan({"com.ssssv.*.mapper", "com.ssssv.*.dao"})
+@MapperScan({"com.ssssv.*.dao"})
 @ComponentScan(value = "com.ssssv")
 @EnableCaching
 public class UserApplication {

@@ -13,6 +13,7 @@
         <module>reaper-common</module>
         <module>reaper-common/reaper-common-web</module>
         <module>reaper-common/reaper-common-mybatisplus</module>
+        <module>reaper-dependencies</module>
     </modules>
 
     <properties>

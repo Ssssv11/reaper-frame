@@ -3,16 +3,56 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>com.ssssv</groupId>
-        <artifactId>reaper-frame</artifactId>
+        <artifactId>reaper-dependencies</artifactId>
         <version>1.0.0-SNAPSHOT</version>
+        <relativePath/>
     </parent>
 
     <artifactId>reaper-common</artifactId>
     <packaging>pom</packaging>
     <modules>
+        <module>reaper-common-mybatisplus</module>
+        <module>reaper-common-web</module>
         <module>reaper-common-swagger</module>
         <module>reaper-common-redis</module>
+        <module>reaper-common-starter</module>
+        <module>reaper-common-log</module>
     </modules>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>com.ssssv</groupId>
+                <artifactId>reaper-common-starter</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.ssssv</groupId>
+                <artifactId>reaper-common-mybatisplus</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.ssssv</groupId>
+                <artifactId>reaper-common-redis</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.ssssv</groupId>
+                <artifactId>reaper-common-swagger</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.ssssv</groupId>
+                <artifactId>reaper-common-web</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.ssssv</groupId>
+                <artifactId>reaper-common-log</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
 
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
