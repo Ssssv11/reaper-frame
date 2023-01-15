@@ -45,3 +45,5 @@ swagger:
   contact-email: Ssssv111@outlook.com
   version: 1.0
   description: 开箱即用的收割机脚手架
+logging:
+  config: classpath:log4j.xml
