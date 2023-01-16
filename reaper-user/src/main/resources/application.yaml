@@ -28,7 +28,7 @@ spring:
       matching-strategy: ant_path_matcher
 sql:
   beauty:
-    show: true
+    show: false
 mybatis-plus:
   global-config:
     db-config:
@@ -45,5 +45,8 @@ swagger:
   contact-email: Ssssv111@outlook.com
   version: 1.0
   description: 开箱即用的收割机脚手架
-logging:
-  config: classpath:log4j.xml
+#logging:
+#  config: classpath:log4j.xml
+log:
+  aspect:
+    enable: true

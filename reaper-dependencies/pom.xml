@@ -34,6 +34,9 @@
         <spring.boot.mybatis.version>3.5.2</spring.boot.mybatis.version>
         <disruptor.version>3.4.1</disruptor.version>
         <mapstruct.version>1.5.3.Final</mapstruct.version>
+        <gson.version>2.9.0</gson.version>
+        <freemarker.version>2.3.31</freemarker.version>
+        <pinyin4j.version>2.5.0</pinyin4j.version>
     </properties>
 
     <dependencies>
@@ -157,6 +160,21 @@
                 <groupId>org.mapstruct</groupId>
                 <artifactId>mapstruct-processor</artifactId>
                 <version>${mapstruct.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.google.code.gson</groupId>
+                <artifactId>gson</artifactId>
+                <version>${gson.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.freemarker</groupId>
+                <artifactId>freemarker</artifactId>
+                <version>${freemarker.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.belerweb</groupId>
+                <artifactId>pinyin4j</artifactId>
+                <version>${pinyin4j.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
