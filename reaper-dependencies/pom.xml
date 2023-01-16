@@ -27,6 +27,7 @@
         <jackson.annotations.version>2.14.1</jackson.annotations.version>
         <jackson.databind.version>2.14.1</jackson.databind.version>
         <commons.lang.version>2.6</commons.lang.version>
+        <commons.lang3.version>3.8</commons.lang3.version>
         <spring.boot.jdbc.version>2.7.6</spring.boot.jdbc.version>
         <spring.aop.version>2.7.6</spring.aop.version>
         <spring.boot.druid.version>1.2.15</spring.boot.druid.version>
@@ -37,6 +38,7 @@
         <gson.version>2.9.0</gson.version>
         <freemarker.version>2.3.31</freemarker.version>
         <pinyin4j.version>2.5.0</pinyin4j.version>
+        <http.client.version>5.0.3</http.client.version>
     </properties>
 
     <dependencies>
@@ -138,6 +140,11 @@
                 <artifactId>commons-lang</artifactId>
                 <version>${commons.lang.version}</version>
             </dependency>
+            <dependency>
+                <groupId>org.apache.commons</groupId>
+                <artifactId>commons-lang3</artifactId>
+                <version>${commons.lang3.version}</version>
+            </dependency>
             <!-- lombok -->
             <dependency>
                 <groupId>org.projectlombok</groupId>
@@ -176,6 +183,12 @@
                 <artifactId>pinyin4j</artifactId>
                 <version>${pinyin4j.version}</version>
             </dependency>
+            <dependency>
+                <groupId>org.apache.httpcomponents.client5</groupId>
+                <artifactId>httpclient5</artifactId>
+                <version>${http.client.version}</version>
+            </dependency>
+
         </dependencies>
     </dependencyManagement>
 
