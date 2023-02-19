@@ -18,6 +18,9 @@
         <module>reaper-common-starter</module>
         <module>reaper-common-log</module>
         <module>reaper-common-tool</module>
+        <module>reaper-common-websocket</module>
+        <module>reaper-common-test</module>
+        <module>reaper-common-job</module>
     </modules>
 
     <dependencyManagement>

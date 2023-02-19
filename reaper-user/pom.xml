@@ -63,6 +63,16 @@
             <groupId>org.mapstruct</groupId>
             <artifactId>mapstruct-processor</artifactId>
         </dependency>
+        <dependency>
+            <groupId>com.ssssv</groupId>
+            <artifactId>reaper-common-test</artifactId>
+            <version>${reaper-common-version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.ssssv</groupId>
+            <artifactId>reaper-common-job</artifactId>
+            <version>${reaper-common-version}</version>
+        </dependency>
     </dependencies>
 
 </project>

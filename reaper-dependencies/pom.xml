@@ -39,6 +39,12 @@
         <freemarker.version>2.3.31</freemarker.version>
         <pinyin4j.version>2.5.0</pinyin4j.version>
         <http.client.version>5.0.3</http.client.version>
+        <guava.version>23.0</guava.version>
+        <fastjson.version>1.2.83</fastjson.version>
+        <websocket.version>2.7.2</websocket.version>
+        <spring-boot-stater-test.version>2.7.6</spring-boot-stater-test.version>
+        <junit.version>4.13.2</junit.version>
+        <xxl-job-core.version>2.3.1</xxl-job-core.version>
     </properties>
 
     <dependencies>
@@ -188,7 +194,36 @@
                 <artifactId>httpclient5</artifactId>
                 <version>${http.client.version}</version>
             </dependency>
-
+            <dependency>
+                <groupId>com.google.guava</groupId>
+                <artifactId>guava</artifactId>
+                <version>${guava.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>fastjson</artifactId>
+                <version>${fastjson.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-websocket</artifactId>
+                <version>${websocket.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-test</artifactId>
+                <version>${spring-boot-stater-test.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>junit</groupId>
+                <artifactId>junit</artifactId>
+                <version>${junit.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.xuxueli</groupId>
+                <artifactId>xxl-job-core</artifactId>
+                <version>${xxl-job-core.version}</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 
